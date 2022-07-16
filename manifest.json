@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Redirectofmoney",
+    "short_name": "Redirectof",
+    "description": "redirects you to wasteof.money when you go to twitter.com",
+    "version": "1.0.0",
+    "browser_action": {
+      "default_icon": "/img/icon128.png",
+      "default_title": "Redirectof"
+    },
+    "icons": {
+      "16": "/img/icon16.png",
+      "48": "/img/icon48.png",
+      "128": "/img/icon128.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*.twitter.com/*"],
+          "js": ["redirect.js"]
+        }
+    ],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "polygononscratch@gmail.com"
+      }
+    }
+}
+  
